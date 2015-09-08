@@ -26,14 +26,14 @@
     <h4 class="bannerRight"></h4>
     <h1 class="bannerTitle" id="site-name">{{ apptitle }}</h1>
 
-    <!-- div class="user-tools" -->
-    <div class="unit" style="float:right;">
+    <div class="unitnav">
         {% include "cspace_django_site/loginBtn.html" with loginBtnNext="search/" %}
     </div>
-    <div style="float:right; margin-top: 6px;" class="unit">
-        {% for info in additionalInfo %}
-            <a href="#" id="{{ info.slug }}" class="expandInfo">{{ info.name }}</a>
-        {% endfor %}
+    <div class="unitnav">
+            <a href="#" id="help" class="expandInfo">Help</a>
+            <a href="#" id="terms" class="expandInfo">Terms</a>
+            <a href="#" id="about" class="expandInfo">About</a>
+            <a href="#" id="credis" class="expandInfo">Credits</a>
     </div>
 {% endblock %}
 

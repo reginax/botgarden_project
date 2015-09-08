@@ -37,7 +37,6 @@ def getConfig(base_path, filename_nosuffix):
         errMsg = "Could not find the required config file %s" % relative_path
         print(errMsg)
         raise Exception(errMsg)
-
     return config
 
 
